@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoe_app/components/image_carousel.dart';
 import 'package:shoe_app/pages/home_page.dart';
 
 class IntroPage extends StatelessWidget {
@@ -18,10 +19,7 @@ class IntroPage extends StatelessWidget {
               //logo
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Image.asset(
-                  'lib/images/logo.png',
-                  height: 240,
-                  ),
+                child: ImageCarousel(),
               ),
           
               const SizedBox(height: 48,),
