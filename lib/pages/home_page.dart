@@ -68,72 +68,87 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white,
                   ),
                   ),
-              // Padding(
-              //   padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              //   child: Divider(
-              //     color: Colors.grey[800],
-              //   ),
-              // ),
-
+                  
               //other pages
-              const Padding(
+               Padding(
                 padding: EdgeInsets.only(left: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.home,
-                    color: Colors.white,),
-                  title: Text(
-                    'Home',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                    ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/home');
+                  },
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.home,
+                      color: Colors.white,),
+                    title: Text(
+                      'Home',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      ),
+                  ),
                 ),
               ),
 
-                const Padding(
+                Padding(
                 padding: EdgeInsets.only(left: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.info,
-                    color: Colors.white,),
-                  title: Text(
-                    'About',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                    ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/info');
+                  },
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.info,
+                      color: Colors.white,),
+                    title: Text(
+                      'About',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      ),
+                  ),
                 ),
               ),
 
-                const Padding(
+                Padding(
                 padding: EdgeInsets.only(left: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.settings,
-                    color: Colors.white,),
-                  title: Text(
-                    'Settings',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                    ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/settings');
+                  },
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.settings,
+                      color: Colors.white,),
+                    title: Text(
+                      'Settings',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      ),
+                  ),
                 ),
               ),
               ],
             ),
-                const Padding(
+
+                Padding(
                 padding: EdgeInsets.only(left: 25.0, bottom: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.logout,
-                    color: Colors.white,),
-                  title: Text(
-                    'Logout',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                    ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/logout');
+                  },
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.logout,
+                      color: Colors.white,),
+                    title: Text(
+                      'Logout',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      ),
+                  ),
                 ),
               ),
             ],

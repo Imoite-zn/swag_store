@@ -95,13 +95,19 @@ class _ShopPageState extends State<ShopPage> {
                 fontSize: 24,              
               ),
             ),
-            Text(
-              'See All',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.blue,
+            GestureDetector(
+              onTap: () {
+                //to show all the stock available
+                Navigator.pushNamed(context, '/stock');
+              },
+              child: Text(
+                'See All',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                  ),
                 ),
-              ),
+            ),
           ],
         ),
       ),
