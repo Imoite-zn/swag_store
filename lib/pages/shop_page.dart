@@ -98,7 +98,7 @@ class _ShopPageState extends State<ShopPage> {
             GestureDetector(
               onTap: () {
                 //to show all the stock available
-                Navigator.pushNamed(context, '/stock');
+                Navigator.pushNamed(context, '/store');
               },
               child: Text(
                 'See All',

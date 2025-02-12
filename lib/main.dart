@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shoe_app/models/cart.dart';
+import 'package:shoe_app/pages/all_merch_page.dart';
 import 'package:shoe_app/pages/home_page.dart';
 import 'package:shoe_app/pages/info_page.dart';
 import 'package:shoe_app/pages/intro_page.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
           '/info': (context) => const InfoPage(),
           '/logout': (context) => const LogoutPage(),
           '/settings': (context) => const SettingsPage(),
+          '/store': (context) => const AllMerchPage(),
         },
         // home: IntroPage(),
       )
